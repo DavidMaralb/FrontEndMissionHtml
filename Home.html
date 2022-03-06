@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria La Perla</title>
+    <style>
+        
+        .all-browsers {
+        margin: 0;
+        padding: 5px;
+        background-color: lightgray;
+        }
+
+        .all-browsers > h1, .browser {
+        margin: 10px;
+        padding: 5px;
+        }
+
+        .browser {
+        background: white;
+        }
+
+        .browser > h2, p {
+        margin: 4px;
+        font-size: 90%;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(199, 26, 107);
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .SaborPan {
+            height: 100px;
+            width: 100px;
+        }
+        .SaborRelleno {
+            height: 50px;
+            width: 50px;
+        }
+        .Adorno {
+            height: 120px;
+            width: 120px;
+        }
+        /* Estilo de footer */
+        footer {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td>
+                    <img src="./img/LaPerlaPasteleriaLogo.png" alt="Logo La Perla" height="288" width="388"/>
+                </td>
+                <td style="width:20%">
+                </td>
+                <td>
+                    <h1>Pasteles La Perla</h1>
+                    <h2>Nos reconocera por el sabor!</h2>
+                </td>
+            </tr>
+          </table>
+    </header>
+    <section>
+        <table style="float:right">
+            <tr>
+                <td>
+                    <a href="#QuienesSomos">Quieres Somos?</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#Pedido">Ordena tu pastel</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="./pastelero.html">Soy el pastelero</a>
+                </td>
+            </tr>
+          </table>
+        <div style="width:800px; margin:0 auto;">
+            <h2 id="QuienesSomos">Quienes Somos?</h1>
+            <p>Pasteles deliciosos de personajes y figuras 3D para sorprender, pide y recibe en casa.</p>
+            <p>Pasteles Personalizados para Todas las Ocasiones.</p>
+            <p>Pasteles de Muchos Sabores. Diseños espectaculares. Diseños personalizados.</p>
+            <br>
+            <p>Nos puede visitar personalmente en:</p>
+            <p><strong>Canelos #100, Col. La Perla, Ciudad Nezahualcoyotl</strong></p>
+            </div>
+        <article>
+            <h1 id="Pedido" align="center">Ordena tu Pastel</h1>
+            <table class="center">
+                <tr>
+                    <td>
+                        <h1 id="SaboresPan">Escoge el sabor del pan</h1>
+                        <tr>
+                            <th></th>
+                            <th>Sabor</th>
+                            <th>Precio</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="SaborPan" src="./img/PastelChocolate.jpg" alt="PastelChocolate"/>
+                            </td>
+                            <td>
+                                <p>Chocolate</p>
+                            </td>
+                            <td>
+                                <input type="radio" id="pan1" name="pan" value="Chocolate">
+                                <label for="pan1">1000</label><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="SaborPan" src="./img/PastelVainilla.jpg" alt="PastelVainilla"/>
+                            </td>
+                            <td>
+                                <p>Vainilla</p>
+                            </td>
+                            <td>
+                                <input type="radio" id="pan2" name="pan" value="Vainilla">
+                                <label for="pan2">800</label><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="SaborPan" src="./img/PastelRed.jpg" alt="PastelRed"/>
+                            </td>
+                            <td>
+                                <p>Red Velvet</p>
+                            </td>
+                            <td>
+                                <input type="radio" id="pan3" name="pan" value="Red">
+                                <label for="pan3">1500</label><br>
+                            </td>
+                        </tr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1 id="SaboresRelleno">Escoge el sabor del relleno</h1>
+                        <tr>
+                            <th>Sabor</th>
+                            <th>Precio</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Chocolate</p>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="Relleno" name="Relleno1" value="Chocolate">
+                                <label for="Relleno1">500</label><br>
+                            </td>
+                            <td>
+                                <img class="SaborRelleno" src="./img/IconoChocolate.png" alt="RellenoChocolate"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Durazno</p>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="Relleno" name="Relleno2" value="Durazno">
+                                <label for="Relleno2">600</label><br>
+                            </td>
+                            <td>
+                                <img class="SaborRelleno" src="./img/IconoDurazno.jpg" alt="RellenoDurazno"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Fresa</p>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="Relleno" name="Relleno3" value="Fresa">
+                                <label for="Relleno3">600</label><br>
+                            </td>
+                            <td>
+                                <img class="SaborRelleno" src="./img/IconoFresa.png" alt="RellenoFresa"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Nuez</p>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="Relleno" name="Relleno4" value="Nuez">
+                                <label for="Relleno4">800</label><br>
+                            </td>
+                            <td>
+                                <img class="SaborRelleno" src="./img/IconoNuez.jpg" alt="RellenoNuez"/>
+                            </td>
+                        </tr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1 id="Adorno">Escoge el adorno de tu pastel</h1>
+                        <tr>
+                            <th></th>
+                            <th>Adorno</th>
+                            <th>Precio</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="Adorno" src="./img/AdornosFrutas.jpg" alt="AdornoFrutas"/>
+                            </td>
+                            <td>
+                                <p>Solo Frutas</p>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="Adorno" name="Adorno1" value="Frutas">
+                                <label for="Adorno1">200</label><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="Adorno" src="./img/AdornosBetun.jpg" alt="AdornoBetun"/>
+                            </td>
+                            <td>
+                                <p>Solo Betun</p>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="Adorno" name="Adorno2" value="Betun">
+                                <label for="Adorno2">100</label><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="Adorno" src="./img/AdornosLetrero.jpg" alt="AdornoLetrero"/>
+                            </td>
+                            <td>
+                                <p>Letrero</p>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="Adorno" name="Adorno3" value="Letrero">
+                                <label for="Adorno3">300</label><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="Adorno" src="./img/AdornosPersonajes.jpg" alt="AdornoPersonaje"/>
+                            </td>
+                            <td>
+                                <p>Personaje 3D</p>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="Adorno" name="Adorno4" value="Personaje3D">
+                                <label for="Adorno4">800</label><br>
+                            </td>
+                        </tr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1 id="Datos">Datos de envio:</h1>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Nombre:</p>
+                            </td>
+                            <td>
+                                <input type="text" id="nombre" name="nombre">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Fecha de entrega:</p>
+                            </td>
+                            <td>
+                                <input type="date" id="fecha" name="fecha">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Teléfono:</p>
+                            </td>
+                            <td>
+                                <input type="tel" id="telefono" name="Telefono">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Correo Electrónico:</p>
+                            </td>
+                            <td>
+                                <input type="email" id="correo" name="correo">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Detalles especiales:</p>
+                            </td>
+                            <td>
+                                <textarea name="item3" cols="50" rows="10"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <input type="submit" value="Submit" id="Envio">
+                            </td>
+                        </tr>
+                    </td>
+                </tr>
+              </table>
+        </article>
+    </section>
+    <footer>
+        <p>Los mejores en México</p>
+    </footer>
+
+</body>
+
+</html>
